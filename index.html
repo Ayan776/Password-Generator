@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="nav_bar">
+        <nav>
+            <h3>Chronicles</h3>
+            <ul>
+                <li><a href="#">Solution</a></li>
+                <li><a href="#">Who are we</a></li>
+                <li><a href="#">resources</a></li>
+
+
+            </ul>
+
+        </nav>
+
+    </div>
+    <div class="father">
+        <div class="main">
+        <h1> <span class="chrono">Chronicles </span> - <br> Where Strong Passwords Are Born.
+
+</h1>
+<p>Chronicles is a sleek and powerful password generator designed  to <br> help you create  strong, secure, and customizable passwords in seconds.</p>
+<button class="btn1">Personal</button>
+<button class="btn2">Business</button>
+    </div>
+    <div class="main_two">
+        <div class="gen">
+            <h3 class="inst">Generate your password</h3>
+            <input type="text" name="" id="output" placeholder="click the button to generate passord"><br>
+            <button class="gp" onclick="genPass()">Generate password</button>
+            <button class="cp" onclick="CopyPass()">Copy password</button><br>
+            <input type="number" name="" id="passLength" min="0" max="36" >
+    <input type="range" name="" id="passRange" min="0" max="36" >
+    <table>
+        <tr class="row">
+            <td><input type="radio" name="difficulty" id="ETS"><label for="#" class="ETSText">Easy to say</label>
+                <br>
+                <input type="radio" name="difficulty" id="ETR"><label for="#" class="ETSText">Easy to read</label>
+                <br>
+                <input type="radio" name="difficulty" id="allC"><label for="#" class="ETSText">All characters</label></td>
+                <td class="check">
+                     <input type="checkbox" name="" id="upperC"><label for="#"  class="ETSText">UpperCase</label><br>
+        <input type="checkbox" name="" id="lowerC"><label for="#"  class="ETSText">LowerCase</label><br>
+            <input type="checkbox" name="" id="numbersC"><label for="#"  class="ETSText">Numbers</label><br>
+                <input type="checkbox" name="" id="symbolsC"><label for="#"  class="ETSText">Symbols</label><br>
+            
+                </td>
+        </tr>
+    </table>
+        </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
